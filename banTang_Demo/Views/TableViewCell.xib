@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="tableViewCell_Flag" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="banTang_Demo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="313.5"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="313"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="37k-sh-hxR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="16"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fyh-wU-2Ko">
+                        <rect key="frame" x="16" y="16" width="382" height="202.5"/>
+                        <color key="backgroundColor" red="0.86274296049999999" green="0.85878866909999996" blue="0.86275649070000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="礼物一定要走心，不需要很贵" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSw-Ga-PG9">
+                        <rect key="frame" x="94.5" y="228.5" width="225.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9VX-Ry-TUc">
+                        <rect key="frame" x="103.5" y="259.5" width="207" height="15.5"/>
+                        <color key="backgroundColor" red="0.86274296049999999" green="0.85878866909999996" blue="0.86275649070000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ZSw-Ga-PG9" firstAttribute="centerX" secondItem="fyh-wU-2Ko" secondAttribute="centerX" id="94a-Jm-Mdc"/>
+                    <constraint firstItem="fyh-wU-2Ko" firstAttribute="centerX" secondItem="37k-sh-hxR" secondAttribute="centerX" id="BFb-I8-N0p"/>
+                    <constraint firstItem="9VX-Ry-TUc" firstAttribute="top" secondItem="ZSw-Ga-PG9" secondAttribute="bottom" constant="10" id="Fsd-AL-xhn"/>
+                    <constraint firstItem="fyh-wU-2Ko" firstAttribute="top" secondItem="37k-sh-hxR" secondAttribute="bottom" id="JPa-3l-OST"/>
+                    <constraint firstItem="fyh-wU-2Ko" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="1037:1125" id="RP3-b7-ogX"/>
+                    <constraint firstItem="37k-sh-hxR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="fXV-PM-yNB"/>
+                    <constraint firstItem="9VX-Ry-TUc" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.5" id="frQ-7I-dr5"/>
+                    <constraint firstItem="ZSw-Ga-PG9" firstAttribute="top" secondItem="fyh-wU-2Ko" secondAttribute="bottom" constant="10" id="gzt-3h-ZYC"/>
+                    <constraint firstItem="9VX-Ry-TUc" firstAttribute="centerX" secondItem="ZSw-Ga-PG9" secondAttribute="centerX" id="iwL-7W-jJN"/>
+                    <constraint firstItem="9VX-Ry-TUc" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.05" id="lvq-ZS-Vmg"/>
+                    <constraint firstAttribute="trailing" secondItem="37k-sh-hxR" secondAttribute="trailing" id="pdt-R3-sG7"/>
+                    <constraint firstItem="37k-sh-hxR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="pfR-Z6-xcZ"/>
+                    <constraint firstItem="37k-sh-hxR" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="44:852" id="svt-jE-Nv2"/>
+                    <constraint firstItem="fyh-wU-2Ko" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="551:852" id="xJY-pj-lam"/>
+                </constraints>
+            </tableViewCellContentView>
+        </tableViewCell>
+    </objects>
+</document>
