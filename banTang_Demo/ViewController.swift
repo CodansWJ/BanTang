@@ -98,6 +98,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
  */
 extension ViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView == titleCollectionView {
+            return
+        }
         // 控制处理导航view的透明度
         let point = scrollView.contentOffset.y / (titlewheelBackView.bounds.height - 64.0)
         self.navigetionView.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: point)
